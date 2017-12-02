@@ -1,0 +1,54 @@
+/*
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+
+    Color theme
+
+    https://color.adobe.com/Flat-UI-color-theme-9882754
+
+    dark gray : #2C3E50
+    orange : #E74C3C;
+    offwhite : #ECF0F1;
+    lightblue: #3498DB;
+    dark blue: #2980B9;
+ */
+
+body{
+	font-family: 'Ubuntu', sans-serif;
+	color:#2C3E50;
+}
+
+/* FONT FAMILIES */
+
+h1, h2, h3, h4,h5,h6{
+	font-family: 'Oswald', sans-serif;
+}
+
+h1{
+	color:#E74C3C;
+}
+
+/* sub titles */
+h3{  
+	color: #2980B9;
+}
+/* Default anchor color */
+
+a{
+	color:#3498DB;
+}
+	a:hover{
+		color:#2980B9;
+	}
+
+.main-navigation-map a{
+	color:#E74C3C;
+}
+	.main-navigation-map a:hover{
+		color:#2C3E50;
+	}
+
+
+
+
+

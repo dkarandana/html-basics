@@ -1,0 +1,166 @@
+body{
+	margin:0;
+}
+/* Global element Wrapper */
+.wrapper{
+	width: 1240px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+/* Menu styles */
+.inline-map li{
+	display: inline-block;
+}
+
+/* Bullet Points */
+
+
+/* Header styles goes here */
+header{
+	position: relative;
+	width:100%;	
+}
+
+	#logo{
+		height:80px;
+	}
+
+	header hgroup{
+		display: inline-block;
+	}
+
+	.media-wrapper{
+		position: relative;
+		top: 24px;
+		display: inline-block;
+		float: right;
+	}
+
+	.global-search{
+		
+	}
+	.social-media{
+
+	}
+
+/* MENU STYLES */
+.main-navigation-map li a{
+	padding: 10px 14px;
+}
+
+
+
+.content-area{
+	position: relative;
+/*	background: blue;*/
+}
+/* Panes */
+
+.panes{
+	display: inline-block;
+	vertical-align: top;
+}
+
+.left-pane{
+	width:26%;
+	/*background: pink;*/
+}
+
+.right-pane{
+	width:73%;
+/*	background: yellowgreen;*/
+}
+
+
+/* News Block */
+
+.latest-news{
+	padding:0 15px;
+}
+
+.latest-news ul{
+	margin: 0;
+	list-style: none;
+	padding: 0;
+}
+.latest-news ul li{
+	margin-bottom: 8px;
+}
+	.latest-news ul li > *{
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.latest-news ul li img{
+		width:130px;
+		height: auto;
+	}
+
+/* main content */
+
+.promo-image{
+	width:450px;
+	height: auto;
+	float: left;
+	margin: 0 20px 20px 0;
+}
+
+/* Sub gallery */
+
+.sub-gallery{
+	/*height: 230px;*/
+	width: 100%;
+	margin-top: 30px;
+
+}
+.loading-block{
+	display: none;
+}
+
+.sub-gallery.loading .loading-block{
+	display: block;
+}
+
+	.sub-gallery .tabs{
+		margin: 0;
+		padding: 0;
+		margin-bottom: 10px;
+		list-style: none;
+		font-size: 1.5em;
+	}
+		.sub-gallery .tabs li{
+			display: inline-block;
+			padding-right: 20px;
+		}
+
+		.sub-gallery .tabs li h4{
+			margin: 2px 0;
+			text-decoration: underline;: 
+		}
+
+
+.tabs .active-tab{
+	color:#E74C3C;
+}
+
+.visible-tab img {
+    height: 100px;
+    width: 100px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+/* Feature boxes */
+
+.feature-boxes{
+	margin-top:30px;
+}
+
+.feature-boxes > div {
+    display: inline-block;
+    width: 32%;
+    background: aliceblue;
+    margin-top: 20px;
+    min-height: 350px;
+}
