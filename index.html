@@ -7,8 +7,11 @@
 	<link href="https://fonts.googleapis.com/css?family=Oswald|Ubuntu" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css
 ">
+
+
 	<link rel="stylesheet" type="text/css" href="css/common-text.css">
 	<link rel="stylesheet" type="text/css" href="css/common-layout.css">
+	<link rel="stylesheet" type="text/css" href="libs/fancybox/jquery.fancybox.min.css"/>
 </head>
 <body>
 	<header>
@@ -57,76 +60,48 @@
 		<div class="left-pane panes">
 			<div class="latest-news">
 				<h3>Latest News</h3>
-				<ul>
+				<ul id="news-feed"  data-cycle-pager-template="<a href=#>*</a>">
 					<li>
-						<img src="images/file3811267338835.jpg" alt="News thumb"/>
 						<div class="description">
-							Description 
+							<img src="images/file3811267338835.jpg" alt="News thumb"/>
+							PACE student Sudarshana Muthugala gets qualified as a Red Hat certified Architect
+						</div>
+					</li>
+					<li class="even">
+						<div class="description">
+							<img src="images/file4811312660912.jpg" alt="News thumb"/>
+							Ten PACE Students Certify as Red Hat Experts in Performance Tuning 
 						</div>
 					</li>
 					<li>
-						<img src="images/file4741298583098.jpg" alt="News thumb"/>
 						<div class="description">
-							Description 
+							<img src="images/file4811312660912.jpg" alt="News thumb"/>
+							PACE Produces Its Fourth Red Hat Certified Architect 
+						</div>
+					</li>
+					<li class="even">
+						<div class="description">
+							<img src="images/file4811312660912.jpg" alt="News thumb"/>
+							Pace to Take Part in EDEX Mid Year Expo 2016
+PACE Completes the Third Year of Our Remarkable Journey 
 						</div>
 					</li>
 					<li>
-						<img src="images/file4811312660912.jpg" alt="News thumb"/>
 						<div class="description">
-							Description 
+							PACE Institute Marks the Second Anniversary
 						</div>
 					</li>
-					<!-- <li>
-						<img src="images/file4821300966298.jpg" alt="News thumb"/>
-						<div class="description">
-							Description 
-						</div>
-					</li>
-					<li>
-						<img src="images/file5001258630705.jpg" alt="News thumb"/>
-						<div class="description">
-							Description 
-						</div>
-					</li>
-					<li>
-						<img src="images/file5051300055797.jpg" alt="News thumb"/>
-						<div class="description">
-							Description 
-						</div>
-					</li>
-					<li>
-						<img src="images/file5391259700152.jpg" alt="News thumb"/>
-						<div class="description">
-							Description 
-						</div>
-					</li>
-					<li>
-						<img src="images/file5861288554715.jpg" alt="News thumb"/>
-						<div class="description">
-							Description 
-						</div>
-					</li>
-					<li>
-						<img src="images/file7561294493011.jpg" alt="News thumb"/>
-						<div class="description">
-							Description 
-						</div>
-					</li>
-					<li>
-						<img src="images/file7681334413913.jpg" alt="News thumb"/>
-						<div class="description">
-							Description 
-						</div>
-					</li> -->
 				</ul>
+				<span class="news-pager"></span>
 			</div>
 			<div>Upcoming Events</div>
 		</div>
 
 		<div class="right-pane panes">
 			<div class="main-content">
-				<img class="promo-image" src="images/file4741298583098.jpg" alt="News thumb"/>
-
+				<a href="images/file4741298583098.jpg" data-fancybox data-caption="Promo image caption">
+					<img class="promo-image" src="images/file4741298583098.jpg" alt="News thumb"/>
+				</a>
 				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p> <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
 				</p> 
 				<p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
@@ -153,7 +128,10 @@ There are many variations of passages of Lorem Ipsum available, but the majority
 	<footer>
 		<p>Copyright text</p>
 	</footer>
-	<script type="text/javascript" src="jquery/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="libs/modernizr-custom.js"></script>
+	<script type="text/javascript" src="libs/jquery/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="libs/cycle2/jquery.cycle2.min.js"></script>
+	<script type="text/javascript" src="libs/fancybox/jquery.fancybox.min.js"></script>
 	<script type="text/javascript" src="libs/scripts.js"></script>
 </body>
 </html>

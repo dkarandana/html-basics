@@ -90,13 +90,41 @@ header{
 	.latest-news ul li > *{
 		display: inline-block;
 		vertical-align: top;
+		background: #fff5fd;
 	}
 
 	.latest-news ul li img{
-		width:130px;
-		height: auto;
+		width: auto;
+		height: 150px;
+		float: left;
+		margin-right: 8px;
+		margin-bottom: 8px;
 	}
 
+	.latest-news ul li.even img{
+		float: right;
+		margin-right: auto;
+		margin-left: 8px;
+	}
+
+	/* pagination */
+
+	.news-pager{
+		font-size: 2em;
+		display: block;
+		text-align: center;
+		width: 100%;
+	}
+		.news-pager >a{
+			float: none;
+			width: 100%;
+			margin: 0 3px;
+			text-decoration: none;
+		}
+			.news-pager > a.cycle-pager-active {
+				color: #2C3E50;
+			}
+	
 /* main content */
 
 .promo-image{

@@ -1,9 +1,38 @@
-console.log("log",this);
+
+if (Modernizr.svg) {
+  // supported
+} else {
+  // not-supported
+}
 
 $(function(){
 	// DOM Ready 
 
-	var $body,subGallery;
+	var $body,subGallery, jQueryFn = $();
+
+	/* news rotator */
+
+	if( jQueryFn.cycle ){
+
+		var $newsFeed = $('#news-feed');
+
+		$newsFeed.cycle({
+			slides:'>li',
+			fx:'fadeout',
+			pager:'.news-pager'
+		});
+
+	}
+
+	if( jQueryFn.fancybox ){
+
+		$("[data-fancybox]").fancybox({
+			afterClose:function(){
+				console.log('afterClose')
+			}
+		});
+	}
+
 
 	$body = $('body');
 
@@ -143,7 +172,7 @@ $(function(){
 
 		}
 
-/* binding gallery tabs */
+		/* binding gallery tabs */
 		$gallery.on('click','.tabs h4', function(){
 		 	var $this = $(this), id, currentTab, image;
 
